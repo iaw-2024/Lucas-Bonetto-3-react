@@ -1,5 +1,5 @@
 const express = require("express");
-
+//const path = require("path");
 const app = express();
 const fs = require('fs');
 
@@ -15,6 +15,7 @@ app.get("/data", (req, res) => {
     });
 });
 
+//app.use(express.static(path.resolve(__dirname, "..", "cliente", "build")));
 app.use(express.static('api'));
 
 app.listen(3001, () => console.log("Server ready on port 3001."));
