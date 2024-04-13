@@ -1,0 +1,27 @@
+[
+    {
+      "LU": 114758,
+      "Nombre": "Lucas",
+      "Apellido": "Bonetto",
+      "Carrera": "Ing en Sistemas"
+    },
+    {
+      "LU": 117845,
+      "Nombre": "Hernan",
+      "Apellido": "Perez",
+      "Carrera": "Ing en Sistemas"
+    },
+    {
+      "LU": 110907,
+      "Nombre": "Gonzalo",
+      "Apellido": "Montenegro",
+      "Carrera": "Ing en Sistemas"
+    },
+    {
+      "LU": 118943,
+      "Nombre": "Tomas",
+      "Apellido": "Cuetto",
+      "Carrera": "Ing en Sistemas"
+    }
+  ]
+  

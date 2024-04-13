@@ -1,9 +1,22 @@
 const express = require("express");
+//const path = require("path");
 const app = express();
+const fs = require('fs');
 
-app.get("/datos", (req, res) => res.send("Express on Vercel!"));
-app.use(express.static('public'))
+app.get("/data", (req, res) => {
+    fs.readFile('./datos.json', 'utf8', (err,data)=>{
+        if(err){
+            console.error('Error al leer el archivo de datos:', err);
+            res.status(500).send('Error interno del servidor');
+        return;
+        }
+        console.log("Se esta haciendo el get en el server");
+        res.status(200).send(JSON.parse(data));
+    });
+});
 
+//app.use(express.static(path.resolve(__dirname, "..", "cliente", "build")));
+app.use(express.static('api'));
 
 app.listen(3001, () => console.log("Server ready on port 3001."));
 
