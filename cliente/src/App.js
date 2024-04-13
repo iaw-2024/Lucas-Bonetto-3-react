@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import List from './List';
+import Titulo from './Titulo';
 
 function App() {
   
@@ -26,9 +27,11 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1>Lista de Elementos</h1>
-      <List items={items} />
+    <div className="App p-4">
+      <Titulo/>
+      <div className="list-conteiner">
+        <List items={items} />
+      </div>
     </div>
   );
 }
